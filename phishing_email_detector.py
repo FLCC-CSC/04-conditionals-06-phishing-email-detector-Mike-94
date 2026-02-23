@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Michael Reed
+# DATE: 2/23/2026
+# BRIEF DESCRIPTION: phishing email project 
 
 
 
