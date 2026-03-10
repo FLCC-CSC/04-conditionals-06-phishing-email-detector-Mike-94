@@ -14,14 +14,15 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-import string
-subject = str(input("Enter the email subject line: "))
+
+subject = input("Enter the email subject line: ").lower()
 print()
-if ("urgent" or "immediate action required") in subject:
+
+if "urgent" in subject or "immediate action required" in subject:
     print("SECURITY ASSESSMENT:\nHIGH RISK: Possible phishing attempt.")
-elif ("win" or "free") in subject:
+elif "win" in subject or "free" in subject:
     print("SECURITY ASSESSMENT:\nMEDIUM RISK: Suspicious offer detected.")
-elif ("password reset") in subject:
+elif "password reset" in subject:
     print("SECURITY ASSESSMENT:\nLOW RISK: Verify legitimacy with sender.")
 else:
     print("SECURITY ASSESSMENT:\nNo phishing indicators detected.")
@@ -81,7 +82,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-    Using 'in' was natural.
+    Using 'in' was natural. I did not realize that I had to do seperate "in" 
 
 
 
@@ -115,7 +116,7 @@ may impede your understanding. Please rate how well you understand the concepts 
 
 [ ] I understand very little about this lab.
 [ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
-[ ] I pretty much get it.
-[X] I'm solid. Totally got it.
+[X] I pretty much get it.
+[ ] I'm solid. Totally got it.
 
 '''
